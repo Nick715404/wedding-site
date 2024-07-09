@@ -3,26 +3,90 @@
 @tailwind utilities;
 
 @layer base {
-
   @font-face {
-    font-family: "BeroldRegular";
-    src: url("/fonts/BeroldRegular.woff") format('woff');
+    font-family: "Berold-Stylistic";
+    src: url(/fonts/BeroldStylistic.otf) format('otf'),
+      url(/fonts/BeroldStylistic.svg) format('svg');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
   }
 
   @font-face {
-    font-family: "BeroldStylistic";
-    src: url("/fonts/BeroldStylistic.woff") format('woff');
+    font-family: "Berold";
+    src: url(/fonts/Berold.otf) format('otf'),
+      url(/fonts/Berold.svg) format('svg');
     font-style: normal;
     font-weight: 400;
     font-display: swap;
   }
-
 }
 
-.body {
+.body,
+html {
   background: rgb(248, 247, 251);
   background: linear-gradient(0deg, rgba(248, 247, 251, 1) 0%, rgba(234, 231, 243, 1) 100%);
+}
+
+.icon-keeper {
+  position: relative;
+}
+
+.icon-keeper::after {
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 15px;
+  width: 136px;
+  height: 18px;
+  background-image: url("/images/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.icon-keeper::before {
+  content: "";
+  position: absolute;
+  top: 35px;
+  right: 15px;
+  width: 136px;
+  height: 18px;
+  background-image: url("/images/svg/arrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotate(180deg);
+}
+
+.list-title {
+  @apply flex gap-3 items-center mb-6 text-[#6F6F6F] text-[22px] md:gap-[6px] md:text-base md:mb-2
+}
+
+.list-children {
+  @apply text-[#6F6F6F]
+}
+
+.list-descritption {
+  @apply text-[32px] ml-[44px] md:text-[21px] md:ml-[32px] md:mb-3 block
+}
+
+.list-children-item {
+  @applay mb-2
+}
+
+.list-item {
+  @apply mb-16 md:mb-10
+}
+
+.counter-item {}
+
+.counter-number {
+  @apply text-[40px] bg-white flex items-center justify-center px-4 py-7 rounded-[20px] mb-[12px] min-w-[82px] md:text-[35px] md:px-3 md:py-5 md:min-w-[66px]
+}
+
+.counter-text {
+  @apply block lowercase
+}
+
+.quote {
+  @apply -mt-[32px] text-[40px] md:text-[35px]
 }

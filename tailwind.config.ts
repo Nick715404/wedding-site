@@ -10,9 +10,36 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'brld-reg': ['BeroldRegular', 'Helvetica', 'Arial', 'sans-serif',],
-        'brld-stl': ['BeroldStylistic', 'Helvetica', 'Arial', 'sans-serif',],
+        'brld-reg': ['Berold', 'Helvetica', 'Arial', 'sans-serif',],
+        'brld-stl': ['Berold-Stylistic', 'Helvetica', 'Arial', 'sans-serif',],
+      },
+      container: {
+        center: true,
+        padding: '15px',
+        screens: {
+          sm: '600px',
+          md: '728px',
+          lg: '984px',
+          xl: '1305px',
+        }
+      },
+      colors: {
+        accent: "#AB93B9"
+      },
+      fontSize: {
+        "4xl": "35px",
+        "10xl": "100px"
+      },
+      lineHeight: {
+        normal: "100%"
       }
+    },
+    screens: {
+      '2xl': {'max': '1535px'},
+      'xl': {'max': '1279px'},
+      'lg': {'max': '1023px'},
+      'md': {'max': '767px'},
+      'sm': {'max': '639px'},
     }
   },
   plugins: [],
