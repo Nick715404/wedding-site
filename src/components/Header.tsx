@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { MotionBox } from "./MotionBox";
-import { mainInfo } from "@/constants";
+import { cinzel } from "@/constants";
 
 export const Header = () => {
   return (
@@ -9,7 +9,7 @@ export const Header = () => {
 
         <MotionBox className="relative flex items-center justify-center w-[226px] h-[123px] mb-28 md:w-[136px] md:h-[74px] md:mb-[70px]">
           <Image className="absolute w-[226px] md:w-[136px]" priority width={226} height={123} style={{ height: 'auto' }} src="/images/png/stars-circle.svg" alt="Дата свадьбы" />
-          <span className="block font-brld-reg mt-[10px] text-4xl md:text-xl">17/08/24</span>
+          <span className={`block font-brld-reg mt-[10px] text-4xl md:text-xl ${cinzel.className}`}>17/08/24</span>
         </MotionBox>
 
         <div className="relative mb-24 md:mb-16">

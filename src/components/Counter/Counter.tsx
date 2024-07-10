@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { useCountdown } from './useCounter';
+import { cinzel } from '@/constants';
 
 interface CountdownProps { targetDate: string, };
 
@@ -11,28 +12,28 @@ export const Countdown = ({ targetDate }: CountdownProps) => {
     <div className='flex items-center gap-[10px] md:gap-[6px]'>
 
       <div className="counter-item">
-        <div className="counter-number">{days}</div>
+        <div className={`counter-number ${cinzel.className}`}>{days}</div>
         <span className='counter-text'>Дней</span>
       </div>
 
       <span className='quote'>;</span>
 
       <div className="counter-item">
-        <div className="counter-number">{hours}</div>
+        <div className={`counter-number ${cinzel.className}`}>{hours}</div>
         <span className='counter-text'>часов</span>
       </div>
 
       <span className='quote'>;</span>
 
       <div className="counter-item">
-        <div className="counter-number">{minutes}</div>
+        <div className={`counter-number ${cinzel.className}`}>{minutes}</div>
         <span className='counter-text'>минут</span>
       </div>
 
       <span className='quote'>;</span>
 
       <div className="counter-item">
-        <div className="counter-number">{seconds}</div>
+        <div className={`counter-number ${cinzel.className}`}>{seconds}</div>
         <span className='counter-text'>секунд</span>
       </div>
 

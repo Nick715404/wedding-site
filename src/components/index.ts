@@ -3,4 +3,5 @@ export { Footer } from "./Footer";
 export { Listing } from "./Listing";
 export { useCountdown } from './Counter/useCounter';
 export { WeddingCounter } from "./WeddingCounter";
+export { Gallery } from "./Gallery";
 // export {} from "";

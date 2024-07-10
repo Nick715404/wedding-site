@@ -12,7 +12,7 @@ type RootLayoutProps = { children: Readonly<React.ReactNode>, };
 export default function RootLayout({ children, }: RootLayoutProps) {
   return (
     <html lang="ru">
-      <body className=" body flex flex-col min-h-dvh text-accent">
+      <body className="font-brld-reg body flex flex-col min-h-dvh text-accent">
         <Header />
         {children}
         <Footer />
