@@ -42,8 +42,7 @@ export function MotionBox({ children, delay, full, className, sideAnimation, ...
       initial='hidden'
       animate={mainControls}
       transition={{ delay: delay }}
-      className={classNames(className)}
-    >
+      className={classNames(className)}>
       {children}
     </motion.div >
   );

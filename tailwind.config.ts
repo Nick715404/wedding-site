@@ -35,7 +35,7 @@ const config: Config = {
       }
     },
     screens: {
-      '2xl': {'max': '1535px'},
+      '2xl': {'max': '1680px'},
       'xl': {'max': '1279px'},
       'lg': {'max': '1023px'},
       'md': {'max': '767px'},

@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Footer, Header } from "@/components";
+import { Flowers, Footer, Header, MusicPlayer } from "@/components";
 
 export const metadata: Metadata = {
   title: "Свадьба Никиты и Татьяны",
@@ -12,10 +12,14 @@ type RootLayoutProps = { children: Readonly<React.ReactNode>, };
 export default function RootLayout({ children, }: RootLayoutProps) {
   return (
     <html lang="ru">
-      <body className="font-brld-reg body flex flex-col min-h-dvh text-accent">
-        <Header />
-        {children}
-        <Footer />
+      <body className="relative overflow-x-hidden font-brld-reg body flex flex-col min-h-dvh text-accent">
+        <div className="overflow-hidden">
+          <Header />
+          {children}
+          {/* <Footer /> */}
+        </div>
+        <Flowers />
+        <MusicPlayer />
       </body>
     </html>
   );

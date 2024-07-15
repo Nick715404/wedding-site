@@ -1,5 +1,7 @@
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <span className="block text-center mb-20">Сайт разработан; SimonovTech</span>
+    </footer>
   )
 }

@@ -22,6 +22,10 @@
   }
 }
 
+* {
+  @apply transition-colors
+}
+
 .body,
 html {
   background: rgb(248, 247, 251);
@@ -89,4 +93,8 @@ html {
 
 .quote {
   @apply -mt-[32px] text-[40px] md:text-[35px]
+}
+
+.no-scroll {
+  @apply relative overflow-hidden after:absolute after:bg-black after:opacity-20 after:w-full after:h-dvh after:top-0 after:left-0 after:z-10
 }
