@@ -25,7 +25,7 @@ export const Flowers = () => {
       <div className="absolute top-[43rem] -right-[18rem] scale-[2] z-50  2xl:-right-[25rem] md:scale-[0.6] md:top-[41rem] md:-right-[20rem]">
         <Image src="/images/flowers/7.png" alt="Цветок" width={850} height={2186}></Image>
       </div>
-      <div className="absolute -bottom-[2rem] -right-[28rem] scale-[1.3] z-50  2xl:scale-[0.5] md:scale-[0.6] md:top-0 md:right-0">
+      <div className="absolute -bottom-[2rem] -right-[28rem] scale-[1.3] z-50  2xl:scale-[0.5] md:scale-[0.5] md:-top-[26rem] md:-right-[34rem]">
         <Image src="/images/flowers/8.png" alt="Цветок" width={1108} height={1344}></Image>
       </div>
     </>
