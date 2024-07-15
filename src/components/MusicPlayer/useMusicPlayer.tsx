@@ -10,10 +10,10 @@ export const useMusicPlayer = () => {
 
   useEffect(() => {
     if (buttonRef.current) buttonRef.current.focus();
-    document.body.classList.add('no-scroll');
+    // document.body.classList.add('no-scroll');
 
     return () => {
-      document.body.classList.remove('no-scroll');
+      // document.body.classList.remove('no-scroll');
     }
   }, []);
 
@@ -22,7 +22,7 @@ export const useMusicPlayer = () => {
       audioRef.current!.pause();
     } else {
       audioRef.current!.play();
-      document.body.classList.remove('no-scroll');
+      // document.body.classList.remove('no-scroll');
     }
     setIsPlaying(!isPlaying);
   };
