@@ -11,13 +11,10 @@ type RootLayoutProps = { children: Readonly<React.ReactNode>, };
 
 export default function RootLayout({ children, }: RootLayoutProps) {
   return (
-    <html lang="ru">
+    <html lang="ru" className="overflow-x-hidden">
       <body className="relative overflow-x-hidden font-brld-reg body flex flex-col min-h-dvh text-accent">
-        <div className="overflow-hidden">
-          <Header />
-          {children}
-          {/* <Footer /> */}
-        </div>
+        <Header />
+        {children}
         <Flowers />
         <MusicPlayer />
       </body>
