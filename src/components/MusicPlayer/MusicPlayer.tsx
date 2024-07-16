@@ -9,7 +9,7 @@ export const MusicPlayer = (props: MusicPlayerProps) => {
   const { isPlaying, togglePlayPause, audioRef, buttonRef, animtate } = useMusicPlayer();
 
   return (
-    <div className={`${animtate} fixed top-[27%] left-[22%] bg-white rounded-full h-[110px] w-[110px] z-30 2xl:top-[36%] 2xl:left-[28%] md:h-[60px] md:w-[60px] md:left-[1.2rem] md:top-[11.5rem]`}>
+    <div className={`${animtate} fixed top-[27%] left-[18%] bg-white rounded-full h-[110px] w-[110px] z-30 2xl:top-[36%] 2xl:left-[28%] md:h-[60px] md:w-[60px] md:left-[1.2rem] md:top-[11.5rem]`}>
       <audio ref={audioRef} src="/audios/perfect.mp3" />
       <button
         ref={buttonRef}

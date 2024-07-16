@@ -26,8 +26,8 @@
   @apply transition-colors
 }
 
-.body,
-html {
+html,
+body {
   background: rgb(248, 247, 251);
   background: linear-gradient(0deg, rgba(248, 247, 251, 1) 0%, rgba(234, 231, 243, 1) 100%);
 }
