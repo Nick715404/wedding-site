@@ -6,26 +6,22 @@ export const useMusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const buttonRef = useRef<HTMLButtonElement | null>(null)
   const [isPlaying, setIsPlaying] = useState<boolean>(false);
-  const animtate = isPlaying ? "" : "animate-bounce";
+  const [animation, setAnimation] = useState<string>("");
+  const animtate = isPlaying ? "" : "";
 
-  // useEffect(() => {
-  //   if (buttonRef.current) buttonRef.current.focus();
-  //   // document.documentElement.classList.add('no-scroll')
-
-  //   return () => {
-  //     // document.documentElement.classList.remove('no-scroll');
-  //   }
-  // }, []);
+  useEffect(() => {
+    setAnimation("animate-bounce");
+  }, []);
 
   const togglePlayPause = () => {
     if (isPlaying) {
       audioRef.current!.pause();
     } else {
       audioRef.current!.play();
-      // document.documentElement.classList.remove('no-scroll')
+      setAnimation("");
     }
     setIsPlaying(!isPlaying);
   };
 
-  return { buttonRef, togglePlayPause, isPlaying, audioRef, animtate }
+  return { buttonRef, togglePlayPause, isPlaying, audioRef, animation }
 }

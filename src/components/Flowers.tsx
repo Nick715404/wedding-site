@@ -10,10 +10,10 @@ export const Flowers = () => {
       <MotionBox delay={0.3} className="absolute top-[12rem] -left-[28rem] scale-[1.8] 2xl:scale-[1.5] 2xl:top-[8rem] xl:scale-[1.4] md:-left-[27rem] md:-top-[17rem] md:scale-[0.55]">
         <Image src="/images/flowers/2.png" priority alt="Цветок" width={800} height={1020}></Image>
       </MotionBox>
-      <div className="absolute top-[54rem] -left-[20rem] scale-[2.4] z-10 2xl:-left-[28rem] xl:scale-[2] xl:-left-[36rem] md:scale-[0.8] md:top-[3rem] md:-left-[31rem]">
+      <div className="absolute top-[54rem] -left-[24rem] scale-[2.4] z-10 2xl:-left-[28rem] xl:scale-[2] xl:-left-[36rem] md:scale-[0.8] md:top-[3rem] md:-left-[31rem]">
         <Image src="/images/flowers/3.png" priority alt="Цветок" width={752} height={1935}></Image>
       </div>
-      <div className="absolute bottom-[32rem] -left-[10rem] scale-[1.4] z-10 2xl:-left-[20rem] xl:scale-[1.2] md:scale-[0.6] md:top-[45rem] md:-left-[22rem]">
+      <div className="absolute bottom-[32rem] -left-[15rem] scale-[1.4] z-10 2xl:-left-[20rem] xl:scale-[1.2] md:scale-[0.6] md:top-[45rem] md:-left-[22rem]">
         <Image src="/images/flowers/4.png" alt="Цветок" width={960} height={984}></Image>
       </div>
       <div className="absolute -bottom-[13rem] left-0 scale-[1] z-10 2xl:scale-[0.7] 2xl:-bottom-[8rem] xl:-bottom-[7rem] xl:-left-[4rem] md:scale-[0.55] md:-bottom-[8.2rem] md:-left-[16rem] sm:-bottom-[7.6rem]">
@@ -25,7 +25,7 @@ export const Flowers = () => {
       <div className="absolute top-[43rem] -right-[18rem] scale-[2] z-10 2xl:-right-[25rem] xl:scale-[1.7] md:scale-[0.6] md:top-[41rem] md:-right-[20rem]">
         <Image src="/images/flowers/7.png" alt="Цветок" width={850} height={2186}></Image>
       </div>
-      <div className="absolute -bottom-[2rem] -right-[28rem] scale-[1.3] z-10 2xl:scale-[0.5] xl:scale-[0.7] md:scale-[0.5] md:-top-[26rem] md:-right-[34rem]">
+      <div className="absolute -bottom-[2rem] -right-[28rem] scale-[1.45] z-10 2xl:scale-[1.2] xl:scale-[0.7] md:scale-[0.5] md:-top-[26rem] md:-right-[34rem]">
         <Image src="/images/flowers/8.png" alt="Цветок" width={1108} height={1344}></Image>
       </div>
     </>

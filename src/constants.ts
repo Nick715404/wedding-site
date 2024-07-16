@@ -1,9 +1,9 @@
 import { Cinzel } from "next/font/google"
 
 export const mainInfo = {
-  guestsTime: "10:45",
-  startOfWedding: "11:00",
-  startOfBanket: "13:00",
+  guestsTime: "11:30",
+  startOfWedding: "12:00",
+  startOfBanket: "14:00",
 };
 
 export const cinzel = Cinzel({

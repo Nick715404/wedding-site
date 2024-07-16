@@ -14,16 +14,30 @@ export const Header = () => {
 
         <div className="relative mb-24 md:mb-16">
           <h1 className="flex flex-col justify-center items-center text-center text-10xl leading-normal md:text-[50px]">
-            <span>Татьяна</span>
             <Image
               style={{ height: 'auto' }}
-              className="md:w-[190px] h-auto"
-              width={375}
+              className="md:w-[193px] h-auto mb-5"
+              width={386}
+              height={45}
+              src="/images/svg/tatyana.svg"
+              alt="Татьяна"
+            />
+            <Image
+              style={{ height: 'auto' }}
+              className="md:w-[190px] h-auto mb-4"
+              width={367}
               height={45}
               src="/images/svg/ampersant.svg"
               alt="Амперсант или '&'"
             />
-            <span>Никита</span>
+            <Image
+              style={{ height: 'auto' }}
+              className="md:w-[180px] h-auto"
+              width={361}
+              height={45}
+              src="/images/svg/nikita.svg"
+              alt="Никита"
+            />
           </h1>
         </div>
 

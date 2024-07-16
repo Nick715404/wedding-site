@@ -21,7 +21,7 @@ export const Listing = () => {
           <div className="flex flex-col">
             <span className="list-descritption">ул. Красноармейская <span className={cinzel.className}>57</span></span>
             <div className="flex flex-col items-end -mt-[31px] md:-mt-[0] md:items-start md:ml-[32px] list-children">
-              <span className="list-children-item">Сбор гостей в <span className={cinzel.className}>10:45</span></span>
+              <span className="list-children-item">Сбор гостей в <span className={cinzel.className}>{mainInfo.guestsTime}</span></span>
               <span className="list-children-item">
                 Начало в <span className={cinzel.className}>{mainInfo.startOfWedding}</span>
               </span>

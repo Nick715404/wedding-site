@@ -1,21 +1,21 @@
 'use client';
 
-import { useEffect, useRef, useState } from "react";
 import { useMusicPlayer } from "./useMusicPlayer";
+import Image from "next/image";
 
 type MusicPlayerProps = {}
 
 export const MusicPlayer = (props: MusicPlayerProps) => {
-  const { isPlaying, togglePlayPause, audioRef, buttonRef, animtate } = useMusicPlayer();
+  const { isPlaying, togglePlayPause, audioRef, buttonRef, animation } = useMusicPlayer();
 
   return (
-    <div className={`${animtate} fixed top-[27%] left-[18%] bg-white rounded-full h-[110px] w-[110px] z-30 2xl:top-[36%] 2xl:left-[28%] md:h-[60px] md:w-[60px] md:left-[1.2rem] md:top-[11.5rem]`}>
+    <div className={`${animation} fixed top-[27%] left-[28%] border-[0.5px] border-[#AB93B9] border-solid rounded-full z-30 2xl:top-[30%] 2xl:left-[23%] md:left-[1.2rem] md:top-[11.5rem]`}>
       <audio ref={audioRef} src="/audios/perfect.mp3" />
       <button
         ref={buttonRef}
-        className="h-[110px] w-[110px] rounded-full md:h-[60px] md:w-[60px]"
+        className="h-[100px] w-[100px] rounded-full flex items-center justify-center bg-[#AB93B933] m-[10px] md:h-[60px] md:w-[60px] md:m-[5px]"
         onClick={togglePlayPause}>
-        {isPlaying ? 'Pause' : 'Play'}
+        <Image width={44} height={44} src={isPlaying ? "/images/svg/note-off.svg" : "/images/svg/note.svg"} alt="Кнопка проигрывания музыки" className="md:w-[24px] md:h-[24px]" />
       </button>
     </div>
   )
