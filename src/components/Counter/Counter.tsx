@@ -16,21 +16,21 @@ export const Countdown = ({ targetDate }: CountdownProps) => {
         <span className='counter-text'>Дней</span>
       </div>
 
-      <span className='quote'>;</span>
+      <span className='quote'>:</span>
 
       <div className="counter-item">
         <div className={`counter-number ${cinzel.className}`}>{hours}</div>
         <span className='counter-text'>часов</span>
       </div>
 
-      <span className='quote'>;</span>
+      <span className='quote'>:</span>
 
       <div className="counter-item">
         <div className={`counter-number ${cinzel.className}`}>{minutes}</div>
         <span className='counter-text'>минут</span>
       </div>
 
-      <span className='quote'>;</span>
+      <span className='quote'>:</span>
 
       <div className="counter-item">
         <div className={`counter-number ${cinzel.className}`}>{seconds}</div>

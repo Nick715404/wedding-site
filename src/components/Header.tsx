@@ -41,7 +41,7 @@ export const Header = () => {
           </MotionBox>
         </div>
 
-        <div className="text-center text-4xl mb-44 md:text-lg md:mb-[50px]">
+        <div className="text-center text-4xl mb-44 md:text-lg md:mb-[50px] leading-[100%]">
           <p>Скоро наступит очень <br /> трепетный и важный <br /> для нас день</p>
         </div>
 
