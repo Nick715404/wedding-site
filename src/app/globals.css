@@ -66,7 +66,7 @@ body {
 }
 
 .list-title {
-  @apply flex gap-3 items-center mb-6 text-[#6F6F6F] text-[22px] md:gap-[6px] md:text-base md:mb-2
+  @apply flex gap-3 items-center mb-0 text-[#6F6F6F] text-[22px] md:gap-[6px] md:text-base md:mb-2
 }
 
 .list-children {
@@ -84,8 +84,6 @@ body {
 .list-item {
   @apply mb-16 md:mb-10
 }
-
-.counter-item {}
 
 .counter-number {
   @apply text-[40px] bg-white flex items-center justify-center px-4 py-7 rounded-[20px] mb-[12px] min-w-[82px] md:text-[35px] md:px-3 md:py-5 md:min-w-[66px]

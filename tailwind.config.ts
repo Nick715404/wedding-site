@@ -39,7 +39,7 @@ const config: Config = {
       'xl': {'max': '1441px'},
       'lg': {'max': '1023px'},
       'md': {'max': '767px'},
-      'sm': {'max': '424px'},
+      'sm': {'max': '375px'},
     }
   },
   plugins: [],
