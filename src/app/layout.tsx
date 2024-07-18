@@ -6,6 +6,18 @@ import { forum } from "@/constants";
 export const metadata: Metadata = {
   title: "Свадьба Никиты и Татьяны",
   description: "Сайт-приглашение на свадьбу Никита и Татьяны Симоновых",
+  openGraph: {
+    type: "website",
+    url: "https://simonovs-wedding.vercel.app/",
+    title: 'Свадьба Никиты и Татьяны',
+    description: 'Сайт-приглашение на свадьбу Никита и Татьяны Симоновых',
+    images: {
+      url: '/images/grap-img.jpg',
+      width: 1200,
+      height: 630,
+      alt: 'Свадьба Никиты и Татьяны',
+    },
+  }
 };
 
 type RootLayoutProps = { children: Readonly<React.ReactNode>, };
