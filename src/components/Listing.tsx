@@ -1,9 +1,10 @@
 import { cinzel, mainInfo } from "@/constants";
 import Image from "next/image";
+import { MotionBox } from "./MotionBox";
 
 export const Listing = () => {
   return (
-    <div className="mb-36">
+    <MotionBox delay={0.2} className="mb-36">
       <ul>
         <li className="list-item">
           <div className="list-title">
@@ -43,6 +44,6 @@ export const Listing = () => {
         </li>
 
       </ul>
-    </div>
+    </MotionBox>
   )
 }
